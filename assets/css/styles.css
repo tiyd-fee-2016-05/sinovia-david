@@ -3,6 +3,17 @@ body {
 
 }
 
+.headerlogo {
+  height: 40px;
+  width: 40px;
+}
+
+.searchBar {
+  width: 350px;
+  height: 20px;
+  padding-top: 0px;
+  display: inline-block;
+}
 .navbar {
   background-color: #F5F5F5;
   width: 100%;
@@ -11,12 +22,18 @@ body {
   display: inline-block;
 }
 
+input {
+  border: 2px solid lime;
+  padding-top: 0px;
+}
+
 .searchInfo {
-  border:1px solid purple;
   height: 40px;
   width: 760px;
   display: inline-block;
-  margin-right: 375px;
+  margin-left: 120px;
+  border: 1px dashed blue;
+
 }
 
 .rightNav{
@@ -55,11 +72,13 @@ h2 {
   font-size: 20px;
   font-weight: lighter;
   color: #999;
+  width: 225px;
 }
 
 .profileinfo {
   line-height: 30px;
   border-bottom: 1px solid gray;
+  width: 450px;
 }
 
 p {
@@ -76,11 +95,11 @@ p {
 
   width: 15px;
   display: inline-block;
+
 }
 
 .detailgroup {
-
-  width: 120px;
+  width: 125px;
   display: inline-block;
 
 }
@@ -93,5 +112,25 @@ p {
 
   display: inline-flex;
   width: 150px;
+  width: 225px;
+}
 
+.followNumber {
+  display: inline-block;
+}
+
+.followText {
+  display: inline;
+}
+
+.follower, .starred, .following {
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+
+}
+
+.borderbottom
+{border-bottom: 1px solid gray;
 }
