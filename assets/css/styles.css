@@ -28,7 +28,7 @@ body {
 }
 
 .leftSideBar {
-  border: 1px solid gold;
+  border: 3px solid gold;
   width: 258px;
   height:540px;
   padding-left: 10px;
@@ -54,4 +54,36 @@ h2 {
   font-size: 20px;
   font-weight: lighter;
   color: #999;
+}
+
+.profileinfo {
+  line-height: 30px;
+  border-bottom: 1px solid gray;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.profileinfo .fa {
+  width: 15px;
+  height: 15px;
+}
+
+.icongroup {
+  border: 1px solid red;
+  width: 15px;
+}
+
+.detailgroup {
+  border: 2px solid lime;
+
+  width: 80px;
+}
+
+.detailgroup p {
+
+}
+
+li {
 }
