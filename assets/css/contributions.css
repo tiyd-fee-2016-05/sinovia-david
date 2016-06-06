@@ -6,7 +6,6 @@ body {
 .headerlogo {
   height: 40px;
   width: 40px;
-
   display: inline-block;
 }
 
@@ -38,6 +37,14 @@ input {
 }
 
 .searchInfo {
+  height: 40px;
+  width: 770px;
+  display: inline-block;
+  margin-left: 120px;
+
+}
+
+.searchInfo: hover {
   height: 40px;
   width: 770px;
   display: inline-block;
@@ -151,6 +158,10 @@ p {
   padding-top: 10px;
   padding-right: 10px;
 
+}
+
+.labelArea {
+  border: 1px solid black;
 }
 
 .borderbottom

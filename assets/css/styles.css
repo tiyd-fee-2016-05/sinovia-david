@@ -1,12 +1,10 @@
 body {
   font-family: Helvetica;
-
 }
 
 .headerlogo {
   height: 40px;
   width: 40px;
-
   display: inline-block;
 }
 
@@ -32,11 +30,26 @@ body {
 }
 
 input {
-
   padding-top: 0px;
   position: relative;
 }
 
+.labelArea{
+  border: 1px solid black;
+  margin-left: 550px;
+  position: fixed;
+  width: 741px;
+  height: 78px;
+}
+
+.Contributions{
+  border: 1px solid black;
+  margin-left: 550px;
+  position: fixed;
+  width: 741px;
+  height: 78px;
+  margin-top: 100px;
+}
 .searchInfo {
   height: 40px;
   width: 770px;
