@@ -28,11 +28,12 @@ body {
 }
 
 .leftSideBar {
-  border: 3px solid gold;
+  padding-top: 20px;
   width: 258px;
   height:540px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: 120px;
 }
 
 img {
@@ -62,6 +63,7 @@ h2 {
 }
 
 p {
+  display: inline-block;
   margin-left: 5px;
 }
 
@@ -71,19 +73,25 @@ p {
 }
 
 .icongroup {
-  border: 1px solid red;
+
   width: 15px;
+  display: inline-block;
 }
 
 .detailgroup {
-  border: 2px solid lime;
 
-  width: 80px;
+  width: 120px;
+  display: inline-block;
+
 }
 
 .detailgroup p {
 
 }
 
-li {
+.profileSection {
+
+  display: inline-flex;
+  width: 150px;
+
 }
