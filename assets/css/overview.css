@@ -43,13 +43,14 @@ input {
 }
 
 .poprepos{
-  border: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
   border-radius: 3px 3px 0 0;
   margin-left: 375px;
   position: fixed;
   width: 730px;
-  height: 300px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .poprepos-ul {
@@ -57,21 +58,66 @@ input {
   display: block;
 }
 
+.repoicon {
+  /*max-width: 18px;
+  max-height: 18px;*/
+  width: 14px;
+  height: auto;
+  margin-left: -20px;
+  margin-right: 10px;
+  color: #666;
+  padding-top: 2px;
+}
+
+
+
 .repolist {
-  padding: 5px;
-  display: block;
+  padding: 5px 60px 5px 30px;
+  /*display: block;*/
+  border-bottom: 1px solid #d8d8d8;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  line-height: 15px;
+  height: 45px;
 }
 
 .repolink {
   text-decoration: none;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .repodesc {
   display: block;
   color: #767676;
   font-size: 12px;
-  margin-left: 5px;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+}
+
+.nodesc {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  height: 20px;
+}
+
+.stars {
+  font-size: 12px;
+  color: #888;
+  position: absolute;
+  right: 10px;
+  margin-top: 15px;
+}
+
+.starsnodesc {
+  margin-top: 5px;
+}
+
+.fa-star {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+
 }
 
 .searchInfo {
