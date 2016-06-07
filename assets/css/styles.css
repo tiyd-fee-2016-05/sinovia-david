@@ -42,14 +42,16 @@ input {
   height: 78px;
 }
 
-.Contributions{
+.contributions{
   border: 1px solid black;
   margin-left: 550px;
   position: fixed;
   width: 741px;
   height: 78px;
   margin-top: 100px;
+  display: none;
 }
+
 .searchInfo {
   height: 40px;
   width: 770px;
@@ -83,7 +85,7 @@ input {
   padding-top: 20px;
   width: 258px;
   height:540px;
-  padding-left: 10px;
+  padding-left: 175px;
   padding-right: 10px;
   margin-left: 120px;
 }
@@ -168,4 +170,154 @@ p {
 
 .borderbottom
 {border-bottom: 1px solid gray;
+}
+
+
+
+.repositoryInfo {
+  width: 732px;
+  padding-top: 15px;
+
+}
+
+.repositoryInfo {
+  border-bottom: 1px solid gray;
+
+}
+.repo-list-stats {
+  float: right;
+
+}
+
+.repo-list-stats a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+
+}
+
+.repoName {
+  font-size: 20px; /* 20/16 */ /* 1.25/16 */ /* 1.25/16 */
+  color: #4078c0;
+  width: 225px; /* 225/16 */ /* 14.063/16 */ /* 14.063/16 */
+  padding-bottom: 5px;
+}
+
+.repoDetails {
+  font-size: 14px;
+  padding-top: 10px;
+  color: gray;
+}
+
+.updateTime {
+  font-size: 13px;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  color: gray;
+}
+
+.programmingLanguage {
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+}
+
+
+.poprepos{
+  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  border-radius: 3px 3px 0 0;
+  margin-left: 550px;
+  position: fixed;
+  width: 730px;
+  margin-top: 70px;
+}
+
+.poprepos-ul {
+  border-top: 1px solid #d8d8d8;
+  display: block;
+}
+
+.repoicon {
+  /*max-width: 18px;
+  max-height: 18px;*/
+  width: 14px;
+  height: auto;
+  margin-left: -20px;
+  margin-right: 10px;
+  color: #666;
+  padding-top: 2px;
+}
+
+
+
+.repolist {
+  padding: 5px 60px 5px 30px;
+  /*display: block;*/
+  border-bottom: 1px solid #d8d8d8;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  line-height: 15px;
+  height: 45px;
+}
+
+.repolink {
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.repodesc {
+  display: block;
+  color: #767676;
+  font-size: 12px;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+}
+
+.nodesc {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  height: 20px;
+}
+
+.stars {
+  font-size: 12px;
+  color: #888;
+  position: absolute;
+  right: 10px;
+  margin-top: 15px;
+}
+
+.starsnodesc {
+  margin-top: 5px;
+}
+
+.fa-star {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+
+}
+
+.searchInfo {
+  height: 40px;
+  width: 770px;
+  display: inline-block;
+  margin-left: 120px;
+
+}
+
+a {
+  color: #4078c0;
+}
+
+
+.poprepotitle {
+  padding: 9px 10px 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-weight: bold;
 }
