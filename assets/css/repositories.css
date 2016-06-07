@@ -1,127 +1,140 @@
 body {
   font-family: Helvetica;
-
 }
 
 .headerlogo {
-  height: 40px;
-  width: 40px;
-
+  height: 2.5em; /* 40/16 */ /* 2.5/16 */
+  width: 2.5em; /* 40/16 */ /* 2.5/16 */
   display: inline-block;
 }
 
 .searchBar {
-  width: 350px;
-  height: 20px;
-  padding-top: 0px;
+  width: 21.875em; /* 350/16 */ /* 21.875/16 */
+  height: 1.25em; /* 20/16 */ /* 1.25/16 */
+  padding-top: 0em; /* 0/16 */ /* 0/16 */
   display: inline-block;
 }
 .navbar {
   background-color: #F5F5F5;
   width: 100%;
-  height: 49px;
+  height: 3.063em; /* 49/16 */ /* 3.063/16 */
   display: inline-block;
 }
 .barHolder{
 
-  width:358px;
+  width:22.375em; /* 358/16 */ /* 22.375/16 */
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 0.625em; /* 10/16 */ /* 0.625/16 */
   position: relative;
 
 }
 
 input {
-
-  padding-top: 0px;
+  padding-top: 0em; /* 0/16 */ /* 0/16 */
   position: relative;
 }
 
+.labelArea{
+  margin-left: 34.375em; /* 550/16 */ /* 34.375/16 */
+  position: fixed;
+  width: 46.313em; /* 741/16 */ /* 46.313/16 */
+  height: 4.875em; /* 78/16 */ /* 4.875/16 */
+  border: 1px solid black;
+}
+
+.Contributions{
+  margin-left: 34.375em; /* 550/16 */ /* 34.375/16 */
+  position: fixed;
+  width: 46.313em; /* 741/16 */ /* 46.313/16 */
+  height: 4.875em; /* 78/16 */ /* 4.875/16 */
+  margin-top: 6.25em; /* 100/16 */ /* 6.25/16 */
+}
 .searchInfo {
-  height: 40px;
-  width: 770px;
+  height: 2.5em; /* 40/16 */ /* 2.5/16 */
+  width: 48.125em; /* 770/16 */ /* 48.125/16 */
   display: inline-block;
-  margin-left: 120px;
+  margin-left: 275px; /* 120/16 */ /* 7.5/16 */
 
 }
 
 .searchInfo a {
-
+  font-size: 13px;
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   color: black;
-  padding-left: 10px;
+/* 10/16 */ /* 0.625/16 */
 }
 
 .rightNav{
 
-  height: 40px;
-  width: 110px;
+  height: 2.5em; /* 40/16 */ /* 2.5/16 */
+  width: 6.875em; /* 110/16 */ /* 6.875/16 */
   display: inline-block;
   text-align: right;
-  margin-left: 250px;
+  margin-left: 15.625em; /* 250/16 */ /* 15.625/16 */
 }
 .tinyavatar {
-  width: 25px;
-  height: 25px;
+  width: 1.563em; /* 25/16 */ /* 1.563/16 */
+  height: 1.563em; /* 25/16 */ /* 1.563/16 */
 }
 
 .leftSideBar {
-  padding-top: 20px;
-  width: 258px;
-  height:540px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 120px;
+  padding-top: 1.25em; /* 20/16 */ /* 1.25/16 */
+  width: 16.125em; /* 258/16 */ /* 16.125/16 */
+  height:33.75em; /* 540/16 */ /* 33.75/16 */
+  padding-left:150px; /* 10/16 */ /* 0.625/16 */
+  padding-right: 0.625em; /* 10/16 */ /* 0.625/16 */
+  margin-left: 7.5em; /* 120/16 */ /* 7.5/16 */
 }
 
 img {
-  width: 225px;
-  height: 225px;
-  border-radius: 5px;
+  width: 14.063em; /* 225/16 */ /* 14.063/16 */
+  height: 14.063em; /* 225/16 */ /* 14.063/16 */
+  border-radius: 0.313em; /* 5/16 */ /* 0.313/16 */
 }
 
 h1 {
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 1.625em; /* 26/16 */ /* 1.625/16 */
+  line-height: 1.875em; /* 30/16 */ /* 1.875/16 */
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 0.313em; /* 5/16 */ /* 0.313/16 */
 }
 
 h2 {
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
-  font-size: 20px;
+  border-bottom: 0.063em solid gray; /* 1/16 */ /* 0.063/16 */
+  padding-bottom: 0.313em; /* 5/16 */ /* 0.313/16 */
+  font-size: 1.25em; /* 20/16 */ /* 1.25/16 */
   font-weight: lighter;
   color: #999;
-  width: 225px;
+  width: 14.063em; /* 225/16 */ /* 14.063/16 */
 }
 
 .profileinfo {
-  line-height: 30px;
-  border-bottom: 1px solid gray;
-  width: 450px;
+  line-height: 1.875em; /* 30/16 */ /* 1.875/16 */
+  border-bottom: 0.063em solid gray; /* 1/16 */ /* 0.063/16 */
+  width: 28.125em; /* 450/16 */ /* 28.125/16 */
 }
 
 p {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.313em; /* 5/16 */ /* 0.313/16 */
 }
 
 .profileinfo .fa {
-  width: 15px;
-  height: 15px;
+  width: 0.938em; /* 15/16 */ /* 0.938/16 */
+  height: 0.938em; /* 15/16 */ /* 0.938/16 */
 }
 
 .icongroup {
 
-  width: 15px;
+  width: 0.938em; /* 15/16 */ /* 0.938/16 */
   display: inline-block;
 
 }
 
 .detailgroup {
-  width: 125px;
+  width: 7.813em; /* 125/16 */ /* 7.813/16 */
   display: inline-block;
 
 }
@@ -133,8 +146,8 @@ p {
 .profileSection {
 
   display: inline-flex;
-  width: 150px;
-  width: 225px;
+  width: 9.375em; /* 150/16 */ /* 9.375/16 */
+  width: 14.063em; /* 225/16 */ /* 14.063/16 */
 }
 
 .followNumber {
@@ -148,11 +161,60 @@ p {
 .follower, .starred, .following {
   display: inline-block;
   text-align: center;
-  padding-top: 10px;
-  padding-right: 10px;
+  padding-top: 0.625em; /* 10/16 */ /* 0.625/16 */
+  padding-right: 0.625em; /* 10/16 */ /* 0.625/16 */
 
 }
 
 .borderbottom
-{border-bottom: 1px solid gray;
+{border-bottom: 0.063em solid gray; /* 1/16 */ /* 0.063/16 */
+}
+
+.repositoryInfo {
+  width: 732px;
+  padding-top: 15px;
+
+}
+
+.repositoryInfo {
+  border-bottom: 1px solid gray;
+
+}
+.repo-list-stats {
+  float: right;
+
+}
+
+.repo-list-stats a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+
+}
+
+.repoName {
+  font-size: 1.25em; /* 20/16 */ /* 1.25/16 */
+  color: #4078c0;
+  width: 14.063em; /* 225/16 */ /* 14.063/16 */
+  padding-bottom: 5px;
+}
+
+.repoDetails {
+  font-size: 14px;
+  padding-top: 10px;
+  color: gray;
+}
+
+.updateTime {
+  font-size: 13px;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  color: gray;
+}
+
+.programmingLanguage {
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
 }
