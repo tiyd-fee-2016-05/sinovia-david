@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/Users/Czechosinovia/Desktop/Experiments/Lodash/styles.css">
+    <script src="/Users/Czechosinovia/Desktop/Experiments/Lodash/interaction.js"> </script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"> </script>
 </head>
 
 <body>
@@ -15,7 +17,8 @@
         <div class="navbar">
             <div class="searchInfo">
               <img class="headerlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png">
-              <div class="barHolder"><input type="text" class="searchBar" placeholder="Search GitHub">  </input> </div>
+              <!-- <div class="barHolder"><form class= "form"><input type="text" class="searchBar" placeholder="Search GitHub" value ="">  </input> </form>
+              </div> -->
               <a href="#"> Pull Requests  </a>
                 <a href="#"> Issues </a>
                   <a href="#"> Gist  </a>
@@ -30,7 +33,11 @@
             </div>
 
             <div class="labelArea">
-          d
+
+
+
+
+
              </div>
 
              <div class="poprepos">
@@ -67,12 +74,6 @@
                   <span class="repodesc">This repo is for demonstration purposes only</span>
                 </li>
               </div>
-
-
-
-
-
-
 
 
              <div class="contributions">
@@ -155,71 +156,94 @@
 
 
         </div>
+
         <div class="leftSideBar">
-            <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
-            <h1> The Octocat </h1>
-            <h2> octocat </h2>
-            <div class="profileSection">
-                <ul class="profileinfo">
+            <main class="main-content">
+            <form class="user-form">
+            <input name="gh-login" type="text" value="">
+            </form>
 
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">company</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">location</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">email</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">blog</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">Joined Date</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="user-info">
             </div>
+            </main>
 
-            <div class="follower">
-                  <h1>1.4k</h1>
-                  <h3>followers<h3>
-           </div>
-           <div class="starred">
-                 <h1>2</h1>
-                 <h3>starred</h3>
-          </div>
+            <script id="gh-error-template" type="text/html">
+            <div class="error">
+            <%- m.message %>
+            </div>
+            </script>
 
-          <div class="following">
-          <h1>6</h1>
-          <h3>following<h3>
-          </div>
-            <h2>  </h2>
-        </div>
+            <script id="gh-user-template" type="text/html">
+
+                <!-- _____________________________________ -->
+                <a class="user-link" href="<%- m.html_url %>">
+                <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
+                </a>
+                <h1> <span class="user-stats">
+                <%- m.name %>
+                </span> </h1>
+                <h2> <span class="user-stats">
+                <%- m.login %>
+                </span> </h2>
+                <div class="profileSection">
+                    <ul class="profileinfo">
+
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.company %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.location %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.email %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.blog %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.created_ %>
+                                </span></p>
+                            </div>
+
+
+
+                            <!-- _____________________________________ -->
+
+
+            </script>
 </body>
 
 </html>
