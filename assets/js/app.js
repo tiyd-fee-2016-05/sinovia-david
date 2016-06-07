@@ -12,6 +12,9 @@ $(function () {
   function showUser(user) {
     show('gh-user-template', user);
   }
+  // function onLoadSubmit() {
+  //     document.user-form.submit();
+  //   }
 
   function showError(req, status, err) {
     err = err || {};

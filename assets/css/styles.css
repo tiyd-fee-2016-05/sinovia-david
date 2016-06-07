@@ -6,17 +6,25 @@ body {
   height: 40px;
   width: 40px;
   display: inline-block;
+  vertical-align: middle;
 }
+
+/*input[value="octocat"] {
+  color: #FFF;
+}*/
+
 
 .searchBar {
   width: 350px;
   height: 20px;
   padding-top: 0px;
   display: inline-block;
+
 }
 
 .user-form {
   display: inline-block;
+
 }
 
 .navbar {
