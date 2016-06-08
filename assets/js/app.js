@@ -1,3 +1,11 @@
+$(document).ready(function() {
+$('.repotab').on('click', function() {
+    $('.contributions').css('display', 'block');
+    $('.poprepos').css('display', 'none');
+    console.log("Click works");
+});
+});
+
 $(function () {
 
   $('.user-form').on('submit', function (e) {
@@ -28,10 +36,4 @@ $(function () {
     $('.user-info').html(fn(model));
   }
 
-});
-
-$(".overviewtab").on('click', function() {
-    $(".contributions").css('display', 'block');
-    $(".poprepos").css('display', 'none');
-    console.log("click works");
 });
