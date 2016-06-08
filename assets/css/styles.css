@@ -87,7 +87,7 @@ body {
 
 .labelArea{
   border-bottom: 1px solid #d8d8d8;
-  margin-left: 550px;
+  margin-left: 500px;
   position: fixed;
   width: 730px;
   margin-top: 25px;
@@ -126,7 +126,7 @@ body {
   width: 110px;
   display: inline-block;
   text-align: right;
-  margin-left: 275px;
+  margin-left: 230px;
 
 }
 .tinyavatar {
@@ -195,9 +195,9 @@ p {
 
 }
 
-.detailgroup p {
+/*.detailgroup p {
 
-}
+}*/
 
 .profileSection {
 
@@ -283,7 +283,7 @@ p {
   border-left: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
   border-radius: 3px 3px 0 0;
-  margin-left: 550px;
+  margin-left: 500px;
   position: fixed;
   width: 730px;
   margin-top: 78px;
