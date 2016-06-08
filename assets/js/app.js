@@ -1,24 +1,15 @@
 $(document).ready(function() {
-$('.repotab').on('click', function() {
-    $('.contributions').css('display', 'block');
-    $('.poprepos').css('display', 'none');
-    console.log("Click works");
-});
-});
-
-<<<<<<< HEAD
-$(document).ready(function() {
 $('.overviewtab').on('click', function() {
     $('.poprepos').css('display', 'block');
     $('.contributions').css('display', 'none');
     console.log("Click works again!");
 });
-=======
-$('.overviewtab').on('click', function() {
-    $('.poprepos').css('display', 'none');
+
+$('.repotab').on('click', function() {
     $('.contributions').css('display', 'block');
+    $('.poprepos').css('display', 'none');
     console.log("Second Click works");
->>>>>>> f57a6b92c49acb13d3f2b42db944172b0edb5d13
+});
 });
 
 $(function () {
