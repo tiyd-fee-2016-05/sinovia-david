@@ -6,6 +6,14 @@ $('.repotab').on('click', function() {
 });
 });
 
+$(document).ready(function() {
+$('.overviewtab').on('click', function() {
+    $('.poprepos').css('display', 'block');
+    $('.contributions').css('display', 'none');
+    console.log("Click works again!");
+});
+});
+
 $(function () {
 
   $('.user-form').on('submit', function (e) {
