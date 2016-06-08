@@ -8,18 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js">
+    </script>
+
 </head>
 
 <body>
     <div id=container>
         <div class="navbar">
             <div class="searchInfo">
-              <img class="headerlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png">
-              <div class="barHolder"><input type="text" class="searchBar" placeholder="Search GitHub">  </input> </div>
-              <a href="#"> Pull Requests  </a>
-                <a href="#"> Issues </a>
-                  <a href="#"> Gist  </a>
-                </div>
+                <img class="headerlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png">
+              <script type="text/javascript">
+              $(document).ready(function(){
+                 $('.user-form').submit();
+            });
+            </script>
+
+              <form class="user-form">
+                  <input name="gh-login" type="text" value="octocat" placeholder="Search GitHub" class="searchform">
+              </form>
+
+                <a href="#" class="headertext"> Pull Requests  </a>
+                <a href="#" class="headertext"> Issues </a>
+                <a href="#" class="headertext"> Gist  </a>
+            </div>
 
 
 
@@ -30,196 +43,244 @@
             </div>
 
             <div class="labelArea">
-          d
-             </div>
-
-             <div class="poprepos">
-              <h3 class="poprepotitle">Popular Repositories</h3>
-              <ul class="poprepos-ul">
-
-                <li class="repolist"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">Spoon-Knife</a>
-
-                  <span class="stars"> 9,939
-                    <i class="fa fa-star" aria-hidden="true"></i></span>
-                  <span class="repodesc">This repo is for demonstration purposes only</span>
-                </li>
-
-                <li class="repolist"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">Hello-World</a>
-                  <span class="stars"> 1,406
-                    <i class="fa fa-star" aria-hidden="true"></i></span>
-                  <span class="repodesc">My first repository on GitHub!</span>
-                </li>
-
-                <li class="repolist"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">hello-world</a>
-                  <span class="stars"> 13
-                    <i class="fa fa-star" aria-hidden="true"></i></span>
-                  <span class="repodesc">My first repository on GitHub.</span>
-                </li>
-
-                <li class="repolist nodesc"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">octocat.github.io</a>
-                  <span class="stars starsnodesc"> 12
-                    <i class="fa fa-star" aria-hidden="true"></i></span>
-                </li>
-
-                <li class="repolist"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">git-consortium</a>
-                  <span class="stars"> 7
-                    <i class="fa fa-star" aria-hidden="true"></i></span>
-                  <span class="repodesc">This repo is for demonstration purposes only</span>
-                </li>
+              <ul>
+                <div class="overviewtab">
+                <i class="fa fa-male" aria-hidden="true"></i>
+                <li class="tab">Overview</li>
               </div>
+              <div class="repotab">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicontab">
+                <li class="tab">Repositories</li>
+              </div>
+              </ul>
 
-
-
-
-
-
-
-
-             <div class="contributions">
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> HTML </span>
-                         <a href="#"><i class="fa fa-star" aria-hidden="true">9,339</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">82,687</i></a>
-                     </div>
-                     <h3 class="repoName"> Spoon-Knife</h3>
-
-                     <span class="repoDetails"> This repo is for demonstration purposes only. </span>
-                     <span class="updateTime"> Updated 5 hours ago. </span>
-                 </div>
-
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> HTML </span>
-                         <a href="#"><i class="fa fa-star" aria-hidden="true">1,406</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">1,124</i></a>
-                     </div>
-                     <h3 class="repoName"> Hello-world</h3>
-
-                     <span class="repoDetails"> My first repository on GitHub! </span>
-                     <span class="updateTime"> Updated 26 days ago. </span>
-                 </div>
-
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> </span>
-                         <a href="#"><i class="fa fa-star" aria-hidden="true">0</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">1</i></a>
-                     </div>
-                     <h3 class="repoName"> test-repo1</h3>
-
-
-                     <span class="updateTime"> Updated on Apr 5 </span>
-                 </div>
-
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> CSS </span>
-                         <a href="#"><i class="fa fa-star" aria-hidden="true">12</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">26</i></a>
-                     </div>
-                     <h3 class="repoName">octocat.github.io</h3>
-                     <span class="updateTime"> Updated on Nov 14, 2015 </span>
-                 </div>
-
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> HTML </span>
-                         <a href="#"><i class="fa fa-star" aria-hidden="true">7</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">15</i></a>
-                     </div>
-                     <h3 class="repoName"> git-consortium</h3>
-
-                     <span class="repoDetails"> This repo is for demonstration purposes only. </span>
-                     <span class="updateTime"> Updated on October 28, 2015 </span>
-                 </div>
-
-                 <div class=repositoryInfo>
-
-                     <div class="repo-list-stats">
-                         <span class="programmingLanguage"> HTML </span>
-                         <a href="#"><i class="fa fa-star-o" aria-hidden="true">9,339</i></a>
-                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">82,687</i></a>
-                     </div>
-                     <h3 class="repoName"> Spoon-Knife</h3>
-
-                     <span class="repoDetails"> My first repository on GitHub! </span>
-                     <span class="updateTime"> Updated on June 17, 2015 </span>
-                 </div>
- </div>
-
-
-        </div>
-        <div class="leftSideBar">
-            <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
-            <h1> The Octocat </h1>
-            <h2> octocat </h2>
-            <div class="profileSection">
-                <ul class="profileinfo">
-
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">company</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">location</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">email</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">blog</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icongroup">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="detailgroup">
-                            <p class="details">Joined Date</p>
-                        </div>
-                    </li>
-                </ul>
             </div>
 
-            <div class="follower">
-                  <h1>1.4k</h1>
-                  <h3>followers<h3>
-           </div>
-           <div class="starred">
-                 <h1>2</h1>
-                 <h3>starred</h3>
+            <div class="poprepos">
+                <h3 class="poprepotitle">Popular Repositories</h3>
+                <ul class="poprepos-ul">
+
+                    <li class="repolist">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">Spoon-Knife</a>
+
+                        <span class="stars"> 9,939
+                    <i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span class="repodesc">This repo is for demonstration purposes only</span>
+                    </li>
+
+                    <li class="repolist">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">Hello-World</a>
+                        <span class="stars"> 1,406
+                    <i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span class="repodesc">My first repository on GitHub!</span>
+                    </li>
+
+                    <li class="repolist">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">hello-world</a>
+                        <span class="stars"> 13
+                    <i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span class="repodesc">My first repository on GitHub.</span>
+                    </li>
+
+                    <li class="repolist nodesc">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">octocat.github.io</a>
+                        <span class="stars starsnodesc"> 12
+                    <i class="fa fa-star" aria-hidden="true"></i></span>
+                    </li>
+
+                    <li class="repolist">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">git-consortium</a>
+                        <span class="stars"> 7
+                    <i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span class="repodesc">This repo is for demonstration purposes only</span>
+                    </li>
+            </div>
+
+
+            <div class="contributions">
+                <div class=repositoryInfo>
+
+
+                  <div class="contributionsBar"><input class="repoSearch"> </input>
+
+                  <button class="searchButton"> Search</button>
+                  <div class="contributionsList">
+                    <span class="boldlink">All</span>
+                    <span class="links">Sources</span>
+                    <span class="links">Forks </span>
+                    <span class="links">Mirrors </span>
+
+
+                    </div>
+                    </div>
+
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> HTML </span>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true">9,339</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">82,687</i></a>
+                    </div>
+                    <h3 class="repoName"> Spoon-Knife</h3>
+
+                    <span class="repoDetails"> This repo is for demonstration purposes only. </span>
+                    <span class="updateTime"> Updated 5 hours ago. </span>
+                </div>
+
+                <div class=repositoryInfo>
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> HTML </span>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true">1,406</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">1,124</i></a>
+                    </div>
+                    <h3 class="repoName"> Hello-world</h3>
+
+                    <span class="repoDetails"> My first repository on GitHub! </span>
+                    <span class="updateTime"> Updated 26 days ago. </span>
+                </div>
+
+                <div class=repositoryInfo>
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> </span>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true">0</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">1</i></a>
+                    </div>
+                    <h3 class="repoName"> test-repo1</h3>
+
+
+                    <span class="updateTime"> Updated on Apr 5 </span>
+                </div>
+
+                <div class=repositoryInfo>
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> CSS </span>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true">12</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">26</i></a>
+                    </div>
+                    <h3 class="repoName">octocat.github.io</h3>
+                    <span class="updateTime"> Updated on Nov 14, 2015 </span>
+                </div>
+
+                <div class=repositoryInfo>
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> HTML </span>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true">7</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">15</i></a>
+                    </div>
+                    <h3 class="repoName"> git-consortium</h3>
+
+                    <span class="repoDetails"> This repo is for demonstration purposes only. </span>
+                    <span class="updateTime"> Updated on October 28, 2015 </span>
+                </div>
+
+                <div class=repositoryInfo>
+
+                    <div class="repo-list-stats">
+                        <span class="programmingLanguage"> HTML </span>
+                        <a href="#"><i class="fa fa-star-o" aria-hidden="true">9,339</i></a>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true">82,687</i></a>
+                    </div>
+                    <h3 class="repoName"> Spoon-Knife</h3>
+
+                    <span class="repoDetails"> My first repository on GitHub! </span>
+                    <span class="updateTime"> Updated on June 17, 2015 </span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="leftSideBar">
+            <main class="main-content">
+
+
+                <div class="user-info">
+                </div>
+            </main>
+
+
+            <script id="gh-user-template" type="text/html">
+
+
+                <!-- _____________________________________ -->
+                <a class="user-link" href="<%- m.html_url %>">
+                <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
+                </a>
+                <h1>
+                <%- m.name %>
+             </h1>
+                <h2> <%- m.login %> </h2>
+                <div class="profileSection">
+                    <ul class="profileinfo">
+
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details">
+                                <%- m.company %></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details">
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.email %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.blog %>
+                                </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icongroup">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="detailgroup">
+                                <p class="details"><span class="user-stats">
+                                <%- m.created_at %>
+                                </span></p>
+                            </div>
+
+
+
+                            <!-- _____________________________________ -->
+
+
+            </script>
+
+            <script id="gh-error-template" type="text/html">
+                <div class="error">
+                    <%- m.message %>
+                </div>
+            </script>
+
           </div>
 
-          <div class="following">
-          <h1>6</h1>
-          <h3>following<h3>
-          </div>
-            <h2>  </h2>
-        </div>
+
+
 </body>
 
 </html>
