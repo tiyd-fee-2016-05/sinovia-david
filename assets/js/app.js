@@ -6,6 +6,12 @@ $('.repotab').on('click', function() {
 });
 });
 
+$('.overviewtab').on('click', function() {
+    $('.poprepos').css('display', 'none');
+    $('.contributions').css('display', 'block');
+    console.log("Second Click works");
+});
+
 $(function () {
 
   $('.user-form').on('submit', function (e) {

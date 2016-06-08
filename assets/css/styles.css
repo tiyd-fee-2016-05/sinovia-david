@@ -87,7 +87,7 @@ body {
 
 .labelArea{
   border-bottom: 1px solid #d8d8d8;
-  margin-left: 500px;
+  margin-left: 550px;
   position: fixed;
   width: 730px;
   margin-top: 25px;
@@ -100,8 +100,51 @@ body {
   position: fixed;
   width: 741px;
   height: 78px;
-  margin-top: 100px;
+  margin-top: 75px;
   display: none;
+}
+
+.repoSearch {
+  width: 260px;
+  height: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.contributionsList {
+  height: 15px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-left: 170px;
+  font-size: 14px;
+}
+
+.contributionsBar {
+  display: inline-block;
+  margin-right: 0px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 40px;
+}
+
+.links {
+  padding-left: 10px;
+  color: #4078c0;
+}
+
+.contributionsBar .boldlink {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.searchButton {
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  vertical-align: middle;
 }
 
 .searchInfo {
@@ -126,7 +169,7 @@ body {
   width: 110px;
   display: inline-block;
   text-align: right;
-  margin-left: 230px;
+  margin-left: 275px;
 
 }
 .tinyavatar {
@@ -195,9 +238,9 @@ p {
 
 }
 
-/*.detailgroup p {
+.detailgroup p {
 
-}*/
+}
 
 .profileSection {
 
@@ -283,7 +326,7 @@ p {
   border-left: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
   border-radius: 3px 3px 0 0;
-  margin-left: 500px;
+  margin-left: 550px;
   position: fixed;
   width: 730px;
   margin-top: 78px;
