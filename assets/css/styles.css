@@ -3,9 +3,82 @@ body {
 }
 
 .headerlogo {
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/*input[value="octocat"] {
+  color: #FFF;
+}*/
+
+.btn {
+  background-color: #60b044;
+  background-image: -webkit-linear-gradient(#8add6d, #60b044);
+  color: #fff;
+  padding: 4px 10px 6px 10px;
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  border-color: #5ca941;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 235px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+.blockbtn {
+  background-color: #f5f5f5;
+  border: 1px solid #d5d5d5;
+  background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+  border-radius: 3px;
+  padding: 4px 10px 6px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.fa-info {
+  color: #999;
+  font-size: 11px;
+  border: 2px solid #999;
+  border-radius: 70%;
+  padding: 2px 6px ;
+  vertical-align: middle;
+}
+
+.tab {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.headertext {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.overviewtab, .repotab {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.overviewtab {
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+
+.repoicontab {
+  width: 14px;
+  height: auto;
 }
 
 .searchBar {
@@ -13,13 +86,29 @@ body {
   height: 20px;
   padding-top: 0px;
   display: inline-block;
+
 }
+
+.user-form {
+  display: inline-block;
+
+}
+
+.searchform {
+  width: 400px;
+  height: 16px;
+  border-radius: 3px;
+}
+
 .navbar {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   width: 100%;
   height: 49px;
   display: inline-block;
+  border-bottom: 1px solid #d8d8d8;
+  padding-top: 12px;
 }
+
 .barHolder{
 
   width:358px;
@@ -29,21 +118,22 @@ body {
 
 }
 
-input {
+/*input {
   padding-top: 0px;
   position: relative;
-}
+}*/
 
 .labelArea{
-  border: 1px solid black;
-  margin-left: 550px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-left: 500px;
   position: fixed;
-  width: 741px;
-  height: 78px;
+  width: 730px;
+  margin-top: 25px;
+
 }
 
 .contributions{
-  border: 1px solid black;
+
   margin-left: 550px;
   position: fixed;
   width: 741px;
@@ -74,20 +164,22 @@ input {
   width: 110px;
   display: inline-block;
   text-align: right;
-  margin-left: 250px;
+  margin-left: 230px;
+
 }
 .tinyavatar {
   width: 25px;
   height: 25px;
+  vertical-align: middle;
 }
 
 .leftSideBar {
-  padding-top: 20px;
+  padding-top: 10px;
   width: 258px;
   height:540px;
   padding-left: 175px;
   padding-right: 10px;
-  margin-left: 120px;
+  margin-left: 25px;
 }
 
 img {
@@ -141,9 +233,9 @@ p {
 
 }
 
-.detailgroup p {
+/*.detailgroup p {
 
-}
+}*/
 
 .profileSection {
 
@@ -229,10 +321,11 @@ p {
   border-left: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
   border-radius: 3px 3px 0 0;
-  margin-left: 550px;
+  margin-left: 500px;
   position: fixed;
   width: 730px;
-  margin-top: 70px;
+  margin-top: 88px;
+  display: block;
 }
 
 .poprepos-ul {
@@ -320,4 +413,55 @@ a {
   background-color: #f5f5f5;
   font-size: 14px;
   font-weight: bold;
+}
+
+
+/*KELLY DEMO*/
+body {
+  font-family: sans-serif;
+  color: #333;
+  background: #FFF;
+}
+
+input {
+  font-size: 1em;
+  padding: 0.5em;
+  color: inherit;
+  border: 1px solid #DDD;
+  outline: none;
+}
+
+.main-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+.user-form {
+  margin-bottom: 2em;
+}
+
+.user-link {
+  display: block;
+
+  overflow: auto;
+  padding: 1em;
+  transition: all 0.15s;
+}
+
+.user-name {
+  display: block;
+  font-size: 2em;
+}
+
+.user-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+img .user-avatar {
+  float: left;
+  max-height: 250px;
+  margin-right: 1em;
+  border-radius: 4em;
+  background: white;
 }
