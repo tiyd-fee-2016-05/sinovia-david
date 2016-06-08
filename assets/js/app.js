@@ -19,7 +19,7 @@ $(function () {
 
     var ghLogin = $('input[name="gh-login"]').val();
     $.getJSON('https://api.github.com/users/' + ghLogin)
-      .done(showUser)
+      .done(showUser, console.log ("user info pulled"))
       .fail(showError);
   });
 
@@ -43,3 +43,5 @@ $(function () {
   }
 
 });
+//
+// REPO ATTEMPT!!

@@ -59,12 +59,15 @@
 
             </div>
 
+
             <div class="poprepos">
+
                 <h3 class="poprepotitle">Popular Repositories</h3>
                 <ul class="poprepos-ul">
 
                     <li class="repolist">
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a><a href="#" class="repolink">Spoon-Knife</a>
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Octicons-repo.svg/200px-Octicons-repo.svg.png" class="repoicon"></a>
+                        <a href="#" class="repolink">Spoon-Knife</a>
 
                         <span class="stars"> 9,939
                     <i class="fa fa-star" aria-hidden="true"></i></span>
@@ -101,10 +104,13 @@
 
 
             <div class="contributions">
+
+
                 <div class=repositoryInfo>
 
 
-                  <div class="contributionsBar"><input class="repoSearch"> </input>
+                  <div class="contributionsBar">
+                    <input class="repoSearch" value="octocat"> </input>
 
                   <button class="searchButton"> Search</button>
                   <div class="contributionsList">
@@ -123,7 +129,8 @@
                         <a href="#"><i class="fa fa-star" aria-hidden="true">9,339</i></a>
                         <a href="#"><i class="fa fa-code-fork" aria-hidden="true">82,687</i></a>
                     </div>
-                    <h3 class="repoName"> Spoon-Knife</h3>
+
+                    <h3 class="repoName"> Spoon-Knife </h3>
 
                     <span class="repoDetails"> This repo is for demonstration purposes only. </span>
                     <span class="updateTime"> Updated 5 hours ago. </span>
@@ -192,6 +199,11 @@
                     <span class="updateTime"> Updated on June 17, 2015 </span>
                 </div>
             </div>
+          </script>
+
+
+
+
 
 
         </div>
@@ -224,8 +236,7 @@
                                 <i class="fa fa-users" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details">
-                                <%- m.company %></p>
+                                <p class="details"> <%- m.company %></p>
                             </div>
                         </li>
                         <li>
@@ -233,8 +244,7 @@
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details">
-                                </span></p>
+                                <p class="details">   <%- m.location %> </p>
                             </div>
                         </li>
                         <li>
@@ -242,9 +252,7 @@
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details"><span class="user-stats">
-                                <%- m.email %>
-                                </span></p>
+                                <p class="details"> <%- m.email %></p>
                             </div>
                         </li>
                         <li>
@@ -252,9 +260,7 @@
                                 <i class="fa fa-link" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details"><span class="user-stats">
-                                <%- m.blog %>
-                                </span></p>
+                                <p class="details"> <%- m.blog %> </p>
                             </div>
                         </li>
                         <li>
@@ -262,9 +268,7 @@
                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details"><span class="user-stats">
-                                <%- m.created_at %>
-                                </span></p>
+                                <p class="details"><%- m.created_at %></p>
                             </div>
 
 
@@ -272,12 +276,6 @@
                             <!-- _____________________________________ -->
 
 
-            </script>
-
-            <script id="gh-error-template" type="text/html">
-                <div class="error">
-                    <%- m.message %>
-                </div>
             </script>
 
           </div>
