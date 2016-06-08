@@ -3,8 +3,8 @@ body {
 }
 
 .headerlogo {
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -16,6 +16,11 @@ body {
 .tab {
   display: inline-block;
   font-size: 16px;
+}
+
+.headertext {
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .overviewtab, .repotab {
@@ -30,10 +35,8 @@ body {
   border-top: 1px solid #d8d8d8;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
-
-
-
 }
+
 .repoicontab {
   width: 14px;
   height: auto;
@@ -52,12 +55,20 @@ body {
 
 }
 
+.searchform {
+  width: 400px;
+  height: 16px;
+  border-radius: 3px;
+}
 .navbar {
   background-color: #F5F5F5;
   width: 100%;
   height: 49px;
   display: inline-block;
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 12px;
 }
+
 .barHolder{
 
   width:358px;
@@ -76,7 +87,8 @@ body {
   border-bottom: 1px solid #d8d8d8;
   margin-left: 550px;
   position: fixed;
-  width: 741px;
+  width: 730px;
+  margin-top: 25px;
 
 }
 
@@ -113,10 +125,12 @@ body {
   display: inline-block;
   text-align: right;
   margin-left: 250px;
+
 }
 .tinyavatar {
   width: 25px;
   height: 25px;
+  vertical-align: middle;
 }
 
 .leftSideBar {
@@ -270,7 +284,7 @@ p {
   margin-left: 550px;
   position: fixed;
   width: 730px;
-  margin-top: 70px;
+  margin-top: 78px;
   display: block;
 }
 

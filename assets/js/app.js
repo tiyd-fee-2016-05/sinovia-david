@@ -30,7 +30,7 @@ $(function () {
 
 });
 
-$(".overviewtab").on('click',function() {
+$(".overviewtab").on('click', function() {
     $(".contributions").css('display', 'block');
     $(".poprepos").css('display', 'none');
     console.log("click works");
