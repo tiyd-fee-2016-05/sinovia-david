@@ -102,7 +102,22 @@
 
             <div class="contributions">
                 <div class=repositoryInfo>
-                  <h3 class="poprepotitle">Popular Repositories</h3>
+
+
+                  <div class="contributionsBar"><input class="repoSearch"> </input>
+
+                  <button class="searchButton"> Search</button>
+                  <div class="contributionsList">
+                    <span class="boldlink">All</span>
+                    <span class="links">Sources</span>
+                    <span class="links">Forks </span>
+                    <span class="links">Mirrors </span>
+
+
+                    </div>
+                    </div>
+
+
                     <div class="repo-list-stats">
                         <span class="programmingLanguage"> HTML </span>
                         <a href="#"><i class="fa fa-star" aria-hidden="true">9,339</i></a>
@@ -189,11 +204,6 @@
                 </div>
             </main>
 
-            <script id="gh-error-template" type="text/html">
-                <div class="error">
-                    <%- m.message %>
-                </div>
-            </script>
 
             <script id="gh-user-template" type="text/html">
 
@@ -202,12 +212,10 @@
                 <a class="user-link" href="<%- m.html_url %>">
                 <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
                 </a>
-                <h1> <span class="user-stats">
+                <h1>
                 <%- m.name %>
-                </span> </h1>
-                <h2> <span class="user-stats">
-                <%- m.login %>
-                </span> </h2>
+             </h1>
+                <h2> <%- m.login %> </h2>
                 <div class="profileSection">
                     <ul class="profileinfo">
 
@@ -216,9 +224,8 @@
                                 <i class="fa fa-users" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details"><span class="user-stats">
-                                <%- m.company %>
-                                </span></p>
+                                <p class="details">
+                                <%- m.company %></p>
                             </div>
                         </li>
                         <li>
@@ -226,8 +233,7 @@
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                             <div class="detailgroup">
-                                <p class="details"><span class="user-stats">
-                                <%- m.location %>
+                                <p class="details">
                                 </span></p>
                             </div>
                         </li>
@@ -267,6 +273,13 @@
 
 
             </script>
+
+            <script id="gh-error-template" type="text/html">
+                <div class="error">
+                    <%- m.message %>
+                </div>
+            </script>
+
           </div>
 
 
