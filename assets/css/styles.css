@@ -420,7 +420,7 @@ input {
   color: inherit;
 }
 
-.user-avatar {
+img .user-avatar {
   float: left;
   max-height: 250px;
   margin-right: 1em;
