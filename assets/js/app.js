@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
 $('.overviewtab').on('click', function() {
     $('.poprepos').css('display', 'block');
     $('.contributions').css('display', 'none');
